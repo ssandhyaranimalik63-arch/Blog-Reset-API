@@ -1,0 +1,30 @@
+### 1. Create a blog (POST)
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "My First Blog",
+    "content": "This is my first blog post.",
+    "author": "Sandhya",
+    "category": "Education"
+}
+
+### 2. Get all blogs (GET)
+GET http://localhost:3000/posts
+
+### 3. Get blog by ID (GET)
+GET http://localhost:3000/posts/3
+
+### 4. Update blog (PUT)
+PUT http://localhost:3000/posts/3
+Content-Type: application/json
+
+{
+    "title": "My Updated Blog",
+    "content": "This is my updated blog post.",
+    "author": "Sandhya",
+    "category": "Technology"
+}
+
+### 5. Delete blog (DELETE)
+DELETE http://localhost:3000/posts/3
